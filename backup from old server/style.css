@@ -1,0 +1,118 @@
+body {
+	background: #71B1B7 url('images/bg.png');
+	background-size:100%;
+	background-attachment:fixed;
+	margin:0px;
+	padding:0px;
+	text-rendering: optimizeLegibility;
+	font-family: Georgia, "Times New Roman", Serif;
+}
+
+#box {
+	width: 500px;
+	background: #0F5F78;
+	color: #FFFFFF;
+	margin: 50px auto 30px auto;
+	padding: 20px 20px;
+	box-shadow: 0px 8px 40px #000;
+}
+
+img#logo {
+	width: 150px;
+	float: left;
+	margin: 0px 20px 20px 0px;
+}
+
+img#loading {
+	margin: 10px 0px;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 48px;
+	text-align: center;
+}
+
+h2 {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+h3 {
+	margin: 20px 0px 10px 0px;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+form {
+	text-align:center;
+	margin: 20px 0px;
+}
+
+form p {
+	font-size: small;
+	margin: 2px 0px;
+}
+
+input#lineToRhyme {
+	/*border: 1px solid #E8D2C0;*/
+	border: 0px;
+	background-color: #E8D2C0;
+	width: 80%;
+	padding: 3px;
+	font-family: Georgia, "Times New Roman", Serif;
+	box-shadow: inset 0px 2px 5px #000;
+}
+
+ul#results {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul#results li {
+	margin: 10px 0px;
+	margin-left: 20px;
+	text-indent: -20px;
+	font-size: medium;
+}
+
+ul.newHashtags {
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px 0px;
+}
+
+ul.newHashtags li {
+	display: inline-block;
+	font-size: small;
+	width: 20%;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+#copyright {
+	text-align: center;
+	font-size: x-small;
+	margin-bottom: 20px;
+}
+
+#copyright p {
+	margin: 5px 0px;
+}
+
+.grey {
+	color: #555555;
+}
