@@ -1,9 +1,9 @@
 body {
 	background: #71B1B7 url('images/bg.png');
 	background-size:100%;
-	background-attachment:fixed;
-	margin:0px;
-	padding:0px;
+	background-attachment: fixed;
+	margin: 0px;
+	padding: 0px;
 	text-rendering: optimizeLegibility;
 	font-family: Georgia, "Times New Roman", Serif;
 }
@@ -43,10 +43,6 @@ h2 {
 h3 {
 	margin: 20px 0px 10px 0px;
 	text-align: center;
-}
-
-ul#newHashtags {
-	padding:0px;
 }
 
 a {
