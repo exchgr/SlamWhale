@@ -13,8 +13,8 @@
 		public $lines; // The lines of the poem.
 
 		public function __construct($lineToRhyme) {
-			$this->line = $lineToRhyme; // Bring in the first line.
-			$this->lines[0] = $lineToRhyme;
+			$this->line = trim($lineToRhyme); // Bring in the first line.
+			$this->lines[0] = trim($lineToRhyme);
 		}
 
 		public function validate() {
