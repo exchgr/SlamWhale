@@ -14,7 +14,7 @@
 
 		public function __construct($lineToRhyme) {
 			$this->line = trim($lineToRhyme); // Bring in the first line.
-			$this->lines[0] = trim($lineToRhyme);
+			$this->lines[0] = $this->line;
 		}
 
 		public function validate() {

@@ -1,0 +1,410 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "//SHOEBOX/www/index.php",
+			"settings":
+			{
+				"buffer_size": 1808,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "//SHOEBOX/www/style.css",
+			"settings":
+			{
+				"buffer_size": 1694,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "//SHOEBOX/www/mobile.css",
+			"settings":
+			{
+				"buffer_size": 805,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "//SHOEBOX/www/functions.js",
+			"settings":
+			{
+				"buffer_size": 2073,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "//SHOEBOX/www/api/rhyme.php",
+			"settings":
+			{
+				"buffer_size": 4288,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "//SHOEBOX/www/include/Extractor.php",
+			"settings":
+			{
+				"buffer_size": 6481,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0,
+		"selected_items":
+		[
+		],
+		"width": 0
+	},
+	"console":
+	{
+		"height": 0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Dan Mundy/.gitignore_global",
+		"//SHOEBOX/www/slamwhale.sublime-workspace",
+		"/C/xampp/htdocs/.git/config",
+		"/C/xampp/htdocs/include/Extractor.php",
+		"/C/xampp/htdocs/api/rhyme.php",
+		"/C/xampp/htdocs/functions.js",
+		"/C/xampp/htdocs/mobile.css",
+		"/C/xampp/htdocs/style.css",
+		"/C/xampp/htdocs/index.php",
+		"/C/Users/Dan Mundy/.gitconfig",
+		"/C/xampp/htdocs/.git/index",
+		"/C/xampp/htdocs/.git/info/exclude",
+		"/C/xampp/htdocs/mobile-old.css",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_first-api-attempt/api/sections/get.php",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_first-api-attempt/engine/page.php",
+		"/C/Users/Dan Mundy/Web Sites/current/wp-content/themes/thisweeksmodel/style.css",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_first-api-attempt/api/sections/save.php",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_first-api-attempt/index.php",
+		"/C/Users/Dan Mundy/.ssh/id_rsa.pub",
+		"/C/xampp/htdocs-orig/index2.php",
+		"/C/xampp/htdocs/README",
+		"/C/Users/Dan Mundy/Web Sites/SlamWhale/README",
+		"/C/xampp/htdocs/stripHashTags.php",
+		"/C/xampp/htdocs/include/Regex.php",
+		"/C/wamp/www/api/rhyme.php",
+		"/C/wamp/www/functions.js",
+		"/C/wamp/www/style.css",
+		"/C/wamp/www/index.php",
+		"/C/Users/Dan Mundy/Web Sites/SlamWhale/api/rhyme.php",
+		"/C/Users/Dan Mundy/Web Sites/SlamWhale/functions.js",
+		"/C/Users/Dan Mundy/Web Sites/SlamWhale/style.css",
+		"/C/Users/Dan Mundy/Web Sites/SlamWhale/index.php",
+		"/C/Users/Dan Mundy/Web Sites/current/wp-content/themes/thisweeksmodel/header.php",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_first-api-attempt/engine/mysql.php",
+		"/C/Users/Dan Mundy/Web Sites/current/wp-content/themes/thisweeksmodel/index.php",
+		"/C/Users/Dan Mundy/Web Sites/designco/wp-content/themes/awesome/header.php",
+		"/C/Users/Dan Mundy/Web Sites/designco/wp-content/themes/awesome/style.css",
+		"/C/Users/Dan Mundy/Web Sites/www/wp-content/themes/blitmag/functions.php"
+	],
+	"find":
+	{
+		"height": 32
+	},
+	"find_in_files":
+	{
+		"height": 84,
+		"include_history":
+		[
+		],
+		"location_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"background",
+			"#",
+			"width",
+			"center",
+			"url",
+			"array_values",
+			"hashtags",
+			"rhyme",
+			"Rhyme",
+			"rhyme",
+			"Rhyme",
+			"rhyme",
+			"Rhyme",
+			"rhyme",
+			"Rhyme",
+			"public",
+			"savesection",
+			"saveSection",
+			"getXmlHttpRequest",
+			"headerWrapper",
+			"left",
+			"right",
+			"position:",
+			"right",
+			"add_shortcode"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "//SHOEBOX/www/index.php",
+					"settings":
+					{
+						"buffer_size": 1808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								785,
+								785
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "//SHOEBOX/www/style.css",
+					"settings":
+					{
+						"buffer_size": 1694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "//SHOEBOX/www/mobile.css",
+					"settings":
+					{
+						"buffer_size": 805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "//SHOEBOX/www/functions.js",
+					"settings":
+					{
+						"buffer_size": 2073,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "//SHOEBOX/www/api/rhyme.php",
+					"settings":
+					{
+						"buffer_size": 4288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								639,
+								639
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "//SHOEBOX/www/include/Extractor.php",
+					"settings":
+					{
+						"buffer_size": 6481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0
+	},
+	"input":
+	{
+		"height": 0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0,
+			1
+		],
+		"rows":
+		[
+			0,
+			1
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0,
+		"selected_items":
+		[
+		],
+		"width": 0
+	},
+	"select_project":
+	{
+		"height": 0,
+		"selected_items":
+		[
+		],
+		"width": 0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150,
+	"status_bar_visible": true
+}
