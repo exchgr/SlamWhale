@@ -1,6 +1,6 @@
 body {
-	background: #CAE4E5 url('images/bg.png') no-repeat bottom center fixed;
-	background-size:100%;
+	background: #CAE4E5 url('images/bg.png') no-repeat bottom center fixed; /* bg.png is pinned to the pottom and doesn't repeat. It fades at the top to #CAE4E5. */
+	background-size: 100%;
 	margin: 0px;
 	padding: 0px;
 	text-rendering: optimizeLegibility;
