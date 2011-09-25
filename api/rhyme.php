@@ -24,7 +24,7 @@
 			$extractor = new Twitter_Extractor($this->line);
 			if (count($extractor->extractURLs()) > 0) {
 				return FALSE;
-			} else if (strlen($this->line) > 70) {
+			} else if (strlen($this->line) > 80) {
 				return FALSE;
 			} else if ($this->line[0] === "@") {
 				return FALSE;

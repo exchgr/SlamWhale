@@ -68,7 +68,7 @@ form input.grey {
 	color: #555555;
 }
 
-form a.button{
+form a.button {
 	display: inline-block;
 	text-decoration: none !important;
 	padding: 3px 6px;
@@ -113,8 +113,7 @@ ul#poem {
 }
 
 ul#poem li {
-	margin: 10px 0px;
-	margin-left: 20px;
+	margin: 10px 0px 10px 20px;
 	text-indent: -20px;
 	font-size: medium;
 }
@@ -145,5 +144,4 @@ ul#hashtags li {
 
 #copyright p {
 	margin: 5px 0px;
-}
 }

@@ -3,9 +3,21 @@
 	<head>
 		<title>SlamWhale</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="mobile.css" type="text/css" />
 		<script type="text/javascript" language="javascript" src="include/jquery-1.6.4.min.js"></script>
 		<script type="text/javascript" language="javascript" src="include/spin.min.js"></script>
 		<script type="text/javascript" language="javascript" src="functions.js"></script>
+		<?
+			$browser = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone") || strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+			if ($browser == true){
+				$browser = 'smartphone';
+			}
+			if($browser == 'smartphone'){
+		?>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<?
+			}
+		?>
 	</head>
 	<body>
 		<div id="box">
