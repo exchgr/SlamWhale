@@ -1,19 +1,22 @@
 body {
-	background: #CAE4E5 url('images/bg.png') no-repeat bottom center fixed; /* bg.png is pinned to the pottom and doesn't repeat. It fades at the top to #CAE4E5. */
+	background: #CAE4E5 url('images/bg.png') no-repeat bottom center fixed;
 	background-size: 100%;
 	margin: 0px;
 	padding: 0px;
 	text-rendering: optimizeLegibility;
-	font-family: Georgia, "Times New Roman", Serif;
+	font-family: sans-serif;
 }
 
 #box {
-	width: 500px;
+	width: 600px;
 	background: #0F5F78;
 	color: #FFFFFF;
 	margin: 50px auto 30px auto;
-	padding: 20px 20px;
+	padding: 20px;
 	box-shadow: 0px 8px 40px #000;
+	border-radius: 5px;
+	overflow: hidden;
+	box-sizing: content-box;
 }
 
 img#logo {
@@ -22,26 +25,19 @@ img#logo {
 	margin: 0px 20px 20px 0px;
 }
 
-img#loading {
-	margin: 10px 0px;
-}
-
 h1 {
 	margin: 0px;
 	padding: 0px;
 	font-size: 48px;
-	text-align: center;
 }
 
 h2 {
 	margin: 0px;
 	padding: 0px;
-	text-align: center;
 }
 
 h3 {
-	margin: 20px 0px 10px 0px;
-	text-align: center;
+	margin: 20px 0px 0px 0px;
 }
 
 a {
@@ -55,71 +51,99 @@ a:hover {
 }
 
 form {
-	text-align:center;
 	margin: 20px 0px 0px 0px;
 }
 
-form p {
-	font-size: small;
-	margin: 2px 0px;
-}
-
-form .button{
-	display: inline-block;
-}
-
-input#lineToRhyme {
+form input#line {
 	/*border: 1px solid #E8D2C0;*/
 	border: 0px;
-	background-color: #E8D2C0;
-	width: 100%;
+	width: 89%;
 	padding: 3px;
-	font-family: Georgia, "Times New Roman", Serif;
-	box-shadow: inset 0px 2px 5px #000;
+	/*font-family: Georgia, "Times New Roman", Serif;*/
+	box-shadow: inset 0px 2px 4px #000;
+	border-radius: 3px;
 }
 
-ul#results {
-	list-style-type: none;
+form input.grey {
+	color: #555555;
+}
+
+form a.button{
+	display: inline-block;
+	text-decoration: none !important;
+	padding: 3px 6px;
+	border-top: 1px solid #1381AA;
+	border-bottom: 1px solid #072F3E;
+	background: #0A4256;
+	color: #FFFFFF;
+	font-size: x-small;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 3px;
+	text-align: center;
+	float: right;
+}
+
+form a.button:hover {
+	border-top: 1px solid #9AB7C0;
+	border-bottom: 1px solid #3D484C;
+	background: #748A91;
+}
+
+form a.button:active {
+	border-top: 1px solid #3D484C;
+	border-bottom: 1px solid #9AB7C0;
+	background: #748A91;
+}
+
+form p {
+	font-size: x-small;
+	margin: 5px 0px;
+}
+
+#manipulable {
 	margin: 0px;
 	padding: 0px;
 }
 
-ul#results li {
+ul#poem {
+	list-style-type: none;
+	margin: 20px 0px 0px 0px;
+	padding: 0px;
+}
+
+ul#poem li {
 	margin: 10px 0px;
 	margin-left: 20px;
 	text-indent: -20px;
 	font-size: medium;
 }
 
-ul.newHashtags {
+ul#hashtags {
 	list-style-type: none;
 	margin: 0px;
-	padding: 10px 0px;
+	padding: 0px 0px;
 }
 
-ul.newHashtags li {
+ul#hashtags li {
 	display: inline-block;
 	font-size: small;
-	width: 20%;
-	text-align: center;
 	padding: 0px;
-	margin: 0px;
-}
-
-.manipulable {
-	margin: 20px 0px 0px 0px;
+	margin: 0px 5px;
 }
 
 #copyright {
+	width: 300px;
 	text-align: center;
 	font-size: x-small;
-	margin-bottom: 20px;
+	margin: 0px auto 20px auto;
+	padding: 10px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 0px 8px 40px #000;
 }
 
 #copyright p {
 	margin: 5px 0px;
 }
-
-.grey {
-	color: #555555;
 }

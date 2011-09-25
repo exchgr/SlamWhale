@@ -12,8 +12,8 @@
 		public $rhymingWords; // Words that rhyme with the last word
 		public $lines; // The lines of the poem.
 
-		public function __construct($lineToRhyme) {
-			$this->line = trim($lineToRhyme); // Bring in the first line.
+		public function __construct($line) {
+			$this->line = trim($line); // Bring in the first line.
 			$this->lines[0] = $this->line;
 		}
 
@@ -123,10 +123,10 @@
 			$this->getLastWord();
 			$this->getRhymingWords();
 			$this->searchTwitter();
-			echo json_encode(array($this->lines, $this->hashtags));
+			echo json_encode(array("poem" => $this->lines, "hashtags" => $this->hashtags));
 		}
 	}
 
-	$line = new Line($_GET["lineToRhyme"]);
+	$line = new Line($_GET["line"]);
 	$line->run();
 ?>
