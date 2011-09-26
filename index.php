@@ -34,7 +34,8 @@
 		</div><!--/box-->
 		<div id="copyright">
 			<p>&copy; 2011 <a href="http://twitter.com/exchgr">Dan Mundy</a>, Devon Peticolas, Andrew Jaeger, Bilal Quadri</p>
-			<p>Built using <a href="http://twitter.com/">Twitter</a>, <a href="http://rhymebrain.com/">Rhymebrain</a>, and <a href="http://jquery.com/">jQuery</a></p>
+			<p>Built using: <a href="http://twitter.com/">Twitter</a> &bull; <a href="http://rhymebrain.com/">Rhymebrain</a> &bull; <a href="http://jquery.com/">jQuery</a></p>
+			<p>Follow us: @<a href="http://twitter.com/slamwhale">SlamWhale</a> &bull; <a href="https://github.com/exchgr/SlamWhale">github</a></p>
 			<p>Award: <a href="http://2011f.pennapps.com/blog/2011/9/18/congratulations-to-the-winners.html">Most Creative App at PennApps 2011</a></p>
 		</div><!--/copyright-->
 	</body>
