@@ -40,12 +40,12 @@ h3 {
 	margin: 20px 0px 0px 0px;
 }
 
-a {
+#box a {
 	text-decoration: none;
 	color: #ffffff;
 }
 
-a:hover {
+#box a:hover {
 	text-decoration: underline;
 	color: #ffffff;
 }
@@ -144,4 +144,13 @@ ul#hashtags li {
 
 #copyright p {
 	margin: 5px 0px;
+}
+
+#copyright a {
+	text-decoration: none;
+	color: #0A4256;
+}
+
+#copyright a:hover {
+	text-decoration: underline;
 }
