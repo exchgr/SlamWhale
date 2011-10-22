@@ -21,8 +21,8 @@
 	</head>
 	<body>
 		<div id="box">
-			<img src="images/logo.png" id="logo"/>
-			<h1>SlamWhale</h1>
+			<a href="/"><img src="images/logo.png" id="logo"/></a>
+			<h1><a href="/">SlamWhale</a></h1>
 			<h2>Automated poetry from tweets.</h2>
 			<form id="lineForm">
 				<input type="text" id="line" value="Spit it." class="grey" />

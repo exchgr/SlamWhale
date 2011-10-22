@@ -50,6 +50,10 @@ h3 {
 	color: #ffffff;
 }
 
+h1 a:hover {
+	text-decoration: none !important;
+}
+
 form {
 	margin: 20px 0px 0px 0px;
 }
