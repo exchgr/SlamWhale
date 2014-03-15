@@ -14,7 +14,7 @@ var fs = require('fs')
 
 // To keep db small (free-mongo-hq size), I'm limiting to only tweets with last
 // words from this list. Sticking them in a null object to get o(1)-ish look up.
-var wordSet = Object.create(null)
+var wordSet = Object.create(null);
 request('http://www.cs.duke.edu/~ola/ap/linuxwords', function (err, res, body) {
   var wordList = body.split('\n');
   for (var i = 0; i < wordList.length; i++) {
@@ -50,23 +50,23 @@ app.use(express.bodyParser());
 // start mongo conn
 MongoClient.connect(process.env.MONGOHQ_URL, function(err, db) {
   if (err) throw err;
-  var col = db.collection('tweets')
+  var col = db.collection('tweets');
 
   // tweet storing mechanism working off twitter streaming API
   twit.stream('statuses/sample', function(stream) {
     stream.on('data', function (data) {
-      if (data['text']) {
+      if (data.text) {
         var tweet = {
-          'text': data['text'],
-          'tweetId': data['id'],
-          'user': data['user']['screen_name'],
-          'avatar': data['user']['profile_image_url']
+          'text': data.text,
+          'tweetId': data.id,
+          'user': data.user.screen_name,
+          'avatar': data.user.profile_image_url
         }
           , lastWord = tweet.text.split(' ').pop();
         if (wordSet[lastWord]) {
           // use free _id index and enforce one tweet per ending-word
           var _id = binHash(lastWord);
-          tweet['_id'] = _id;
+          tweet._id = _id;
           col.update({'_id': _id}, tweet, {'upsert': true}, function (err) {
             if (err) throw err;
           });
@@ -81,7 +81,7 @@ MongoClient.connect(process.env.MONGOHQ_URL, function(err, db) {
       , targetWord = line.split(' ').pop();
     try {
       rhymeWord(targetWord, function(err, matches) {
-        var cur = col.find({'_id': {'$in': matches.map(binHash)}})
+        var cur = col.find({'_id': {'$in': matches.map(binHash)}});
         cur.toArray(function(err, docs) {
           if (err) throw err;
           res.send(docs);

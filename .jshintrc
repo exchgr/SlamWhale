@@ -1,0 +1,17 @@
+{
+  // Enforcing options
+  "bitwise": true,
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": true,
+  "trailing": true,
+  "undef": true,
+
+  // Relaxing options
+  "eqnull": true,
+  "laxcomma": true,
+  "lastsemic": true,
+
+  // Environment options
+  "node": true
+}
