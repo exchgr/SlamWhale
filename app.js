@@ -1,5 +1,4 @@
-var fs = require('fs')
-  , crypto = require('crypto')
+var crypto = require('crypto')
   , request = require('request')
   , twit = new require('twitter')({
       consumer_key: process.env.TWITTER_CONSUMER_KEY,
