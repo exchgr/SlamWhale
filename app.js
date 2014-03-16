@@ -82,19 +82,17 @@ MongoClient.connect(process.env.MONGOHQ_URL, function(err, db) {
   app.post('/rhyme', function (req, res) {
     var line = req.body.line
       , targetWord = line.split(' ').pop();
-    try {
-      rhymeWord(targetWord, function(err, matches) {
-        if (err) throw err;
-        var cur = col.find({'_id': {'$in': matches.map(binHash)}});
-        cur.toArray(function(err, docs) {
-          if (err) throw err;
-          res.send(docs);
-        });
-       });
-    } catch (err) {
-      console.error(err);
-      res.send(500, '!?');
-    }
+
+    rhymeWord(targetWord, function(err, matches) {
+      if (err) return res.send(500, '!?');
+
+      var cur = col.find({'_id': {'$in': matches.map(binHash)}});
+      cur.toArray(function(err, docs) {
+        if (err) return res.send(500, '!?');
+        res.send(docs);
+      });
+
+    });
   });
 });
 
