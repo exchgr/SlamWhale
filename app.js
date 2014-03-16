@@ -1,5 +1,4 @@
-var fs = require('fs')
-  , crypto = require('crypto')
+var crypto = require('crypto')
   , request = require('request')
   , twit = new require('twitter')({
       consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -16,6 +15,7 @@ var fs = require('fs')
 // words from this list. Sticking them in a null object to get o(1)-ish look up.
 var wordSet = Object.create(null);
 request('http://www.cs.duke.edu/~ola/ap/linuxwords', function (err, res, body) {
+  if (err) throw err;
   var wordList = body.split('\n');
   for (var i = 0; i < wordList.length; i++) {
     wordSet[wordList[i]] = true;
@@ -31,7 +31,7 @@ function rhymeWord(word, cb) {
   request(
     'http://rhymebrain.com/talk?function=getRhymes&word=' + word
     , function (err, res, body) {
-      if(err) throw err;
+      if(err) return cb(err, null);
       var matches = JSON.parse(body)
                         .sort(function (a, b) { return b.score - a.score })
                         .map(function (it) { return it.word })
@@ -68,7 +68,7 @@ MongoClient.connect(process.env.MONGOHQ_URL, function(err, db) {
           var _id = binHash(lastWord);
           tweet._id = _id;
           col.update({'_id': _id}, tweet, {'upsert': true}, function (err) {
-            if (err) throw err;
+            console.error(err);
           });
         }
       }
@@ -79,17 +79,17 @@ MongoClient.connect(process.env.MONGOHQ_URL, function(err, db) {
   app.post('/rhyme', function (req, res) {
     var line = req.body.line
       , targetWord = line.split(' ').pop();
-    try {
-      rhymeWord(targetWord, function(err, matches) {
-        var cur = col.find({'_id': {'$in': matches.map(binHash)}});
-        cur.toArray(function(err, docs) {
-          if (err) throw err;
-          res.send(docs);
-        });
+
+    rhymeWord(targetWord, function(err, matches) {
+      if (err) return res.send(500, '!?');
+
+      var cur = col.find({'_id': {'$in': matches.map(binHash)}});
+      cur.toArray(function(err, docs) {
+        if (err) return res.send(500, '!?');
+        res.send(docs);
       });
-    } catch (e) {
-      res.send(500, '!?');
-    }
+
+    });
   });
 });
 
