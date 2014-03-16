@@ -31,10 +31,7 @@ function rhymeWord(word, cb) {
   request(
     'http://rhymebrain.com/talk?function=getRhymes&word=' + word
     , function (err, res, body) {
-      if(err) {
-        cb(err, null);
-        return;
-      };
+      if(err) return cb(err, null);
       var matches = JSON.parse(body)
                         .sort(function (a, b) { return b.score - a.score })
                         .map(function (it) { return it.word })
