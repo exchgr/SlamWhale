@@ -68,7 +68,7 @@ MongoClient.connect(process.env.MONGOHQ_URL, function(err, db) {
           var _id = binHash(lastWord);
           tweet._id = _id;
           col.update({'_id': _id}, tweet, {'upsert': true}, function (err) {
-            console.error(err);
+            if (err) console.error(err);
           });
         }
       }
