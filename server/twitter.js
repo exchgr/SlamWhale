@@ -25,7 +25,7 @@ function Tweet(id, text, user, avatar) {
   this._id = storage.binHash(this.lastWord());
 }
 Tweet.prototype.lastWord = function() {
-  return this.text.substring(this.text.lastIndexOf(' ') + 1);
+  return this.text.substring(this.text.lastIndexOf(' ') + 1).toLowerCase();
 };
 
 /**
