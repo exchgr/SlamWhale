@@ -22,6 +22,7 @@ function Tweet(id, text, user, avatar) {
   this.text = text.trim();
   this.user = user;
   this.avatar = avatar;
+  this.syllables = this.syllables();
   this._id = storage.binHash(this.lastWord());
 }
 Tweet.prototype.lastWord = function() {
