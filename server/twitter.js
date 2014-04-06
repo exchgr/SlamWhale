@@ -27,6 +27,11 @@ function Tweet(id, text, user, avatar) {
 Tweet.prototype.lastWord = function() {
   return this.text.substring(this.text.lastIndexOf(' ') + 1).toLowerCase();
 };
+Tweet.prototype.syllables = function() {
+  return this.text.toLowerCase().split(' ').reduce(function(syls, word) {
+    return syls + ((word.split(/[e|es|ed]$/)[0].match(/[aeiouy]+/g) || []).length || 1);
+  }, 0);
+};
 
 /**
  * This function starts streaming from the Twitter API
