@@ -6,7 +6,7 @@
   "latedef": true,
   "trailing": true,
   "undef": true,
-  "strict": true,
+  "globalstrict": true,
 
   // Relaxing options
   "eqnull": true,
@@ -14,8 +14,6 @@
   "lastsemic": true,
 
   // Environment options
-  "node": false,
-  "browser": true,
-  "jquery": true
+  "node": true,
+  "browser": true
 }
-

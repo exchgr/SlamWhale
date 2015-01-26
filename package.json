@@ -3,14 +3,20 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "npm run assets && npm run browserify && node server/app.js",
+    "assets": "mkdir -p dist && cp -r ./public/* dist/",
+    "browserify": "mkdir -p ./dist/js && ./node_modules/.bin/browserify -g uglifyify ./client/app.js --debug | ./node_modules/.bin/exorcist ./dist/js/bundle.js.map > ./dist/js/bundle.js"
   },
   "dependencies": {
+    "bluebird": "^1.1.0",
+    "browserify": "^8.1.1",
+    "dotenv": "^0.2.5",
+    "exorcist": "^0.1.6",
     "express": "^3.4.8",
+    "jquery": "^2.1.3",
+    "mongodb": "^1.3.23",
     "request": "^2.34.0",
     "twitter": "^0.2.9",
-    "mongodb": "^1.3.23",
-    "bluebird": "^1.1.0",
-    "dotenv": "^0.2.5"
+    "uglifyify": "^3.0.1"
   }
 }

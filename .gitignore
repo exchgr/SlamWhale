@@ -4,3 +4,4 @@ secrets
 *.swp
 *.swo
 .env
+dist

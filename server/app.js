@@ -7,18 +7,17 @@ require('dotenv').load();
  * Module dependencies
  */
 var express = require('express')
-  , storage = require('./server/storage')
-  , dictionary = require('./server/dictionary')
-  , rhymes = require('./server/rhymes')
-  , twitter = require('./server/twitter')
+  , storage = require('./storage')
+  , dictionary = require('./dictionary')
+  , rhymes = require('./rhymes')
+  , twitter = require('./twitter')
   , app = express();
 
 /**
  * Configure app
  */
-app.set('views', __dirname + '/views');
 app.use(express.favicon());
-app.use(express.static(__dirname + '/client'));
+app.use(express.static(__dirname + '/../dist'));
 app.use(express.bodyParser());
 
 /**

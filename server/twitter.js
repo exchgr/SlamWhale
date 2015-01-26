@@ -16,6 +16,7 @@ var twitter = new Twitter({
 
 /**
  * Create a prototype for Tweets
+ * @constructor
  */
 function Tweet(id, text, user, avatar) {
   this.id = id;

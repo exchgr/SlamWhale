@@ -1,7 +1,10 @@
-(function() {
-  "use strict";
+'use strict';
 
+var $ = require('jquery');
+
+module.exports = function() {
   $('#rhyme-form').on('submit', function(e) {
+    e.preventDefault();
     var rhymeLine = $('#rhyme-line').val();
     $.post('/rhyme', {line: rhymeLine}, function(res) {
       var poem = [{'text': rhymeLine}].concat(res);
@@ -9,8 +12,5 @@
         $('#tweets').append('<li>' + poem[i].text + '</li>');
       }
     });
-
-    return false;
   });
-
-}).call(this);
+};
